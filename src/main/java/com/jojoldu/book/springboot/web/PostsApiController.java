@@ -3,6 +3,7 @@ package com.jojoldu.book.springboot.web;
 import com.jojoldu.book.springboot.service.PostsService;
 import com.jojoldu.book.springboot.web.dto.PostsSaveRequestDto;
 import lombok.RequiredArgsConstructor;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -19,4 +20,7 @@ public class PostsApiController {
         return postsService.save(requestDto);
     }
 
+    public Long update(@PathVariable Long id){
+
+    }
 }
